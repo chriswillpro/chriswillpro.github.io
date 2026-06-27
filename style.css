@@ -1,0 +1,120 @@
+/* Reset default margins and set up a dark, modern theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Sleek slate dark background */
+    color: #e2e8f0;            /* Soft off-white text for readability */
+}
+
+/* 1. THE SPLIT-SCREEN LAYOUT */
+.split-container {
+    display: flex;
+    height: 100vh;            /* Forces the layout to match the exact height of your monitor */
+    overflow: hidden;         /* Prevents the entire page from scrolling weirdly */
+}
+
+/* 2. LEFT PANE - FIXED INFO */
+.left-pane {
+    flex: 1;                  /* Takes up exactly half the screen width */
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Perfectly centers your bio vertically */
+    background-color: #0f172a;
+}
+
+.left-pane h1 {
+    font-size: 2.5rem;
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+}
+
+.left-pane h2 {
+    font-size: 1.25rem;
+    color: #38bdf8;           /* Subtle electric blue accent color */
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.left-pane p {
+    color: #94a3b8;
+    max-width: 360px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Simple Navigation Links */
+.left-pane nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.left-pane nav a:hover {
+    color: #38bdf8;           /* Glow effect on hover */
+}
+
+/* 3. RIGHT PANE - SCROLLABLE CONTENT */
+.right-pane {
+    flex: 1;                  /* Takes up the other half of the screen */
+    padding: 4rem;
+    overflow-y: auto;         /* This magic line makes ONLY the right side scrollable! */
+    background-color: #1e293b; /* Slightly lighter shade to add visual depth */
+}
+
+.right-pane h3 {
+    font-size: 1.5rem;
+    color: #f8fafc;
+    margin-bottom: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;      /* Gives breathing room between sections */
+}
+
+/* 4. CLEAN & SLEEK PROJECT CARDS */
+.project-card {
+    background-color: #0f172a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #334155; /* Subtle border outlining the card */
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Elevates the card when hovered */
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+}
+
+.project-card h4 {
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Technical Skill Tags */
+.tags span {
+    display: inline-block;
+    background-color: #1e293b;
+    color: #38bdf8;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}

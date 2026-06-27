@@ -1,2 +1,3 @@
-# chriswillpro.github.io
-A stylized portfolio to show to neatly demonstrate my experience on my resume.
+# Stylized Portfolio
+
+The purpose of this repository is to store and organize my projects in a matter that also demonstartes design intentionality and process.

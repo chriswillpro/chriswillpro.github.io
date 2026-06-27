@@ -118,3 +118,25 @@ section {
     border-radius: 4px;
     margin-right: 0.5rem;
 }
+
+/* Category Badges inside the cards */
+.category-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+/* Make Advanced cards pop with a subtle left accent border */
+.project-card.advanced {
+    border-left: 3px solid #38bdf8; /* Electric blue accent */
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+/* Foundational card style */
+.project-card.foundational {
+    border-left: 3px solid #64748b; /* Clean slate gray accent */
+}

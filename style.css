@@ -140,3 +140,18 @@ section {
 .project-card.foundational {
     border-left: 3px solid #64748b; /* Clean slate gray accent */
 }
+
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+    /* Forces project cards to take up the full screen width and stack on top of each other */
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    
+    /* Optional: Adjust main container padding for smaller screens */
+    .container {
+        padding: 10px;
+    }
+}
